@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    body{
+        font-family: 'Lato', sans-serif;
+        @apply text-neutral-500;
+    }
+    h1, h2, h3, h4, .arvo{
+        font-family: 'Arvo', serif;
+    }
+    h2{
+        @apply text-3xl font-bold text-center text-primary py-5 md:text-5xl;
+    }
+}
+@layer components {
+    .menu-link {
+        @apply transition duration-300 ease-in-out hover:text-secondary;
+    }
+    .btn-lg {
+        @apply text-white bg-primary text-2xl px-5 py-3 rounded-xl transition
+        duration-300 ease-in-out hover:bg-secondary hover:text-primary;
+    }
+}
